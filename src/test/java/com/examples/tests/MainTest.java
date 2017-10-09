@@ -4,6 +4,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.junit4.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -34,6 +35,7 @@ public class MainTest {
     }
 
     @Test
+    @Tag("Good tests")
     @DisplayName("Good test")
     public void simpleTest() {
         log.info("Yeah!");
@@ -49,6 +51,7 @@ public class MainTest {
      * Javadoc
      */
     @Test
+    @Tag("Good tests")
     @DisplayName("JavaDoc test")
     @Description(useJavaDoc = true)
     public void javaDocDescriptionTest() {
